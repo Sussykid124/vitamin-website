@@ -1,12 +1,12 @@
-# Vitamin Information Website
+# Vitamin Information Website (Table Format)
 
-This simple HTML website provides a list of vitamins, including their pros and cons.  It's designed to be informative and easy to read.
+This simple HTML website provides a list of vitamins, including their pros and cons, presented in a clear and organized table format.
 
 ## Features
 
-*   Lists various vitamins, not just the most common ones.
-*   Clearly outlines the benefits (pros) and potential drawbacks (cons) of each vitamin.
-*   Uses a responsive grid layout for easy viewing on different screen sizes.
+*   Lists various vitamins in a table.
+*   Clearly outlines the benefits (pros) and potential drawbacks (cons) of each vitamin in separate columns.
+*   Uses a responsive design.
 *   Simple, clean design for optimal readability.
 
 ## Setup
@@ -16,12 +16,12 @@ This simple HTML website provides a list of vitamins, including their pros and c
 
 ## Usage
 
-Just open the `index.html` file, and the website will display.  Scroll through the list of vitamins to read about their pros and cons.  No further interaction is required.
+Just open the `index.html` file, and the website will display the table.  Scroll through the table to read about the pros and cons of each vitamin.
 
 ## Contributing
 
-This is a very basic project, but if you have suggestions for improvements (e.g., adding more detailed information, improving the styling, adding more vitamins), feel free to fork the project and make changes.
+This is a very basic project, but if you have suggestions for improvements feel free to fork the project and make changes.
 
 ## License
 
-This project is open-source and available for anyone to use and modify.  No specific license is attached.
+This project is open-source.  No specific license is attached.
