@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitamins: Pros and Cons</title>
+    <title>Micronutrients: Pros, Cons, and Context</title>
     <style>
         body {
             font-family: sans-serif;
@@ -33,7 +33,11 @@
         .cons {
             color: red;
         }
-        ul { /* Remove default list styling */
+        .context {
+            color: #777; /* Gray color for context */
+            font-style: italic;
+        }
+         ul { /* Remove default list styling */
           list-style: none;
           padding: 0;
           margin: 0;
@@ -45,14 +49,15 @@
     </style>
 </head>
 <body>
-    <h1>Vitamins: Pros and Cons</h1>
+    <h1>Micronutrients: Pros, Cons, and Context</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Vitamin</th>
+                <th>Micronutrient</th>
                 <th>Pros</th>
                 <th>Cons</th>
+                <th>Context</th>
             </tr>
         </thead>
         <tbody>
@@ -62,242 +67,497 @@
                   <ul>
                     <li>Essential for vision, especially night vision.</li>
                     <li>Supports immune function.</li>
-                    <li>Promotes cell growth and differentiation.</li>
-                    <li>Important for bone growth and reproduction.</li>
-                  <li>Antioxidant properties (especially beta-carotene).</li>
+                    <li>Promotes cell growth.</li>
+                    <li>Important for bone growth.</li>
+                    <li>Antioxidant (beta-carotene).</li>
                   </ul>
                 </td>
                 <td class="cons">
                   <ul>
-                    <li>High doses of preformed Vitamin A (retinoids) can be toxic.</li>
-                    <li>Can cause birth defects if taken in excess during pregnancy.</li>
-                    <li>Symptoms of toxicity include nausea, headache, dizziness, and blurred vision.</li>
-                    <li>Excess beta-carotene can cause carotenodermia (yellowing of the skin), which is generally harmless.</li>
+                    <li>High doses of retinoids toxic.</li>
+                    <li>Birth defects (excess in pregnancy).</li>
+                    <li>Toxicity: nausea, headache.</li>
+                    <li>Carotenodermia (harmless).</li>
                   </ul>
+                </td>
+                <td class="context">
+                    Found in liver, dairy, eggs (retinoids); orange/yellow fruits & veggies (beta-carotene).
                 </td>
             </tr>
             <tr>
                 <td>Vitamin B1 (Thiamine)</td>
                 <td class="pros">
                   <ul>
-                    <li>Crucial for energy metabolism (converting carbohydrates into energy).</li>
+                    <li>Energy metabolism.</li>
                     <li>Supports nerve function.</li>
-                    <li>Important for heart health.</li>
+                    <li>Heart health.</li>
                   </ul>
                 </td>
                 <td class="cons">
-                <ul>
-                    <li>Deficiency can lead to beriberi (a disease affecting the nervous and cardiovascular systems).</li>
-                    <li>Alcohol consumption can interfere with thiamine absorption.</li>
-                    <li>Rarely, very high doses can cause upset stomach.</li>
-                </ul>
+                  <ul>
+                    <li>Deficiency: beriberi.</li>
+                    <li>Alcohol interferes with absorption.</li>
+                    <li>High doses: upset stomach (rare).</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in whole grains, pork, legumes.  Deficiency more common in populations with high refined grain intake.
                 </td>
             </tr>
             <tr>
               <td>Vitamin B2 (Riboflavin)</td>
               <td class="pros">
                 <ul>
-                  <li>Important for energy production.</li>
-                  <li>Supports cellular function, growth, and development.</li>
-                  <li>Acts as an antioxidant.</li>
-                  <li>Helps maintain healthy skin, eyes, and mucous membranes.</li>
+                  <li>Energy production.</li>
+                  <li>Cellular function.</li>
+                  <li>Antioxidant.</li>
+                  <li>Healthy skin, eyes.</li>
                 </ul>
               </td>
               <td class="cons">
-              <ul>
-                  <li>Deficiency can cause skin problems, mouth sores, and anemia.</li>
-                  <li>Excess riboflavin is usually excreted in urine, making toxicity rare.</li>
-                  <li>May cause urine to turn bright yellow (harmless).</li>
-              </ul>
+                <ul>
+                  <li>Deficiency: skin problems.</li>
+                  <li>Excess excreted (rare toxicity).</li>
+                  <li>Bright yellow urine (harmless).</li>
+                </ul>
+              </td>
+              <td class="context">
+                Found in milk, eggs, meat, leafy greens.  Light sensitive, so store foods appropriately.
               </td>
             </tr>
             <tr>
-              <td>Vitamin B3 (Niacin, Nicotinamide, Nicotinic Acid)</td>
+              <td>Vitamin B3 (Niacin)</td>
               <td class="pros">
                 <ul>
-                  <li>Plays a vital role in energy metabolism.</li>
-                  <li>Helps maintain healthy skin and nerves.</li>
-                  <li>Can lower cholesterol levels (especially nicotinic acid).</li>
-                  <li>Supports digestive function.</li>
+                  <li>Energy metabolism.</li>
+                  <li>Healthy skin, nerves.</li>
+                  <li>Lowers cholesterol (nicotinic acid).</li>
+                  <li>Digestive function.</li>
                 </ul>
               </td>
               <td class="cons">
-              <ul>
-                <li>High doses of nicotinic acid can cause flushing, itching, and liver damage.</li>
-                <li>Nicotinamide is less likely to cause flushing but may still cause nausea at high doses.</li>
-                <li>Deficiency can lead to pellagra (a disease characterized by skin problems, diarrhea, and dementia).</li>
-              </ul>
+                <ul>
+                  <li>High doses: flushing, liver damage.</li>
+                  <li>Nausea at high doses.</li>
+                  <li>Deficiency: pellagra.</li>
+                </ul>
               </td>
+                <td class="context">
+                  Found in meat, poultry, fish, whole grains.  Nicotinic acid form used for cholesterol management.
+                </td>
             </tr>
             <tr>
                 <td>Vitamin B5 (Pantothenic Acid)</td>
                 <td class="pros">
                   <ul>
-                    <li>Essential for energy metabolism.</li>
-                    <li>Plays a role in the synthesis of hormones and cholesterol.</li>
-                    <li>Supports wound healing.</li>
-                    <li>Widely available in foods, making deficiency rare.</li>
+                    <li>Energy metabolism.</li>
+                    <li>Hormone/cholesterol synthesis.</li>
+                    <li>Wound healing.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                <ul>
+                  <li>Deficiency extremely rare.</li>
+                  <li>High doses: mild diarrhea/nausea.</li>
+                </ul>
+                </td>
+                <td class="context">
+                    Widely available in many foods; "pantothenic" means "from everywhere."
+                </td>
+            </tr>
+            <tr>
+                <td>Vitamin B6 (Pyridoxine)</td>
+                <td class="pros">
+                  <ul>
+                    <li>Brain development/function.</li>
+                    <li>Neurotransmitter/RBC production.</li>
+                    <li>Regulates homocysteine.</li>
+                    <li>Immune function.</li>
                   </ul>
                 </td>
                 <td class="cons">
                   <ul>
-                    <li>Deficiency is extremely rare.</li>
-                    <li>Very high doses may cause mild diarrhea or nausea.</li>
+                    <li>High doses: nerve damage.</li>
+                    <li>Deficiency: anemia, skin problems.</li>
                   </ul>
                 </td>
-            </tr>
-            <tr>
-                <td>Vitamin B6 (Pyridoxine, Pyridoxal, Pyridoxamine)</td>
-                <td class="pros">
-                <ul>
-                    <li>Important for brain development and function.</li>
-                    <li>Plays a role in the production of neurotransmitters and red blood cells.</li>
-                    <li>Helps regulate homocysteine levels (high levels are linked to heart disease).</li>
-                    <li>Supports immune function.</li>
-                </ul>
-                </td>
-                <td class="cons">
-                <ul>
-                    <li>High doses can cause nerve damage (neuropathy).</li>
-                    <li>Deficiency can lead to anemia, skin problems, and depression.</li>
-                </ul>
+                <td class="context">
+                    Found in meat, fish, poultry, bananas, potatoes.  Important for those with certain medical conditions.
                 </td>
             </tr>
             <tr>
               <td>Vitamin B7 (Biotin)</td>
               <td class="pros">
                 <ul>
-                    <li>Important for the metabolism of fats, carbohydrates, and protein.</li>
-                    <li>Supports healthy hair, skin, and nails.</li>
-                    <li>May help regulate blood sugar levels.</li>
+                    <li>Metabolism of fats, carbs, protein.</li>
+                    <li>Healthy hair, skin, nails.</li>
+                    <li>May regulate blood sugar.</li>
                 </ul>
               </td>
               <td class="cons">
                 <ul>
-                    <li>Deficiency is rare but can cause hair loss, skin rashes, and neurological problems.</li>
-                    <li>High doses are generally considered safe, but may interfere with some lab tests.</li>
+                    <li>Deficiency rare: hair loss, rashes.</li>
+                    <li>High doses generally safe, but may affect lab tests.</li>
                 </ul>
+              </td>
+              <td class="context">
+                Found in eggs, nuts, seeds, sweet potatoes.  Raw egg whites contain avidin, which binds biotin and prevents absorption.
               </td>
             </tr>
             <tr>
-              <td>Vitamin B9 (Folate, Folic Acid)</td>
+              <td>Vitamin B9 (Folate/Folic Acid)</td>
               <td class="pros">
                 <ul>
-                    <li>Crucial for cell growth and division, especially during pregnancy.</li>
-                    <li>Helps prevent neural tube defects in developing babies.</li>
-                    <li>Important for red blood cell formation.</li>
-                    <li>May help reduce the risk of certain cancers.</li>
+                    <li>Cell growth/division (pregnancy).</li>
+                    <li>Prevents neural tube defects.</li>
+                    <li>RBC formation.</li>
+                    <li>May reduce cancer risk.</li>
                   </ul>
               </td>
               <td class="cons">
-                <ul>
-                    <li>High doses of folic acid can mask a vitamin B12 deficiency.</li>
-                    <li>Deficiency can lead to anemia and other health problems.</li>
-                </ul>
+                 <ul>
+                    <li>High doses mask B12 deficiency.</li>
+                    <li>Deficiency: anemia.</li>
+                  </ul>
+              </td>
+              <td class="context">
+                Found in leafy greens, legumes, citrus fruits.  Folic acid is the synthetic form used in supplements and fortified foods.
               </td>
             </tr>
             <tr>
               <td>Vitamin B12 (Cobalamin)</td>
               <td class="pros">
                 <ul>
-                    <li>Essential for nerve function and the formation of red blood cells.</li>
-                    <li>Plays a role in DNA synthesis.</li>
-                    <li>Important for brain health.</li>
+                    <li>Nerve function, RBC formation.</li>
+                    <li>DNA synthesis.</li>
+                    <li>Brain health.</li>
                 </ul>
               </td>
               <td class="cons">
                 <ul>
-                    <li>Deficiency can lead to anemia, nerve damage, and cognitive problems.</li>
-                    <li>Absorption can be impaired in older adults and people with certain digestive conditions.</li>
-                    <li>Vegans and vegetarians are at higher risk of deficiency.</li>
-                </ul>
+                    <li>Deficiency: anemia, nerve damage.</li>
+                    <li>Absorption issues in older adults.</li>
+                    <li>Vegans/vegetarians at risk.</li>
+                  </ul>
+              </td>
+              <td class="context">
+                Found primarily in animal products (meat, poultry, fish, eggs, dairy).  Vegans need supplements or fortified foods.
               </td>
             </tr>
             <tr>
               <td>Vitamin C (Ascorbic Acid)</td>
               <td class="pros">
                 <ul>
-                    <li>Potent antioxidant.</li>
-                    <li>Supports immune function.</li>
-                    <li>Necessary for collagen synthesis (important for skin, bones, and connective tissues).</li>
-                    <li>Enhances iron absorption.</li>
-                    <li>May help reduce the duration and severity of colds.</li>
+                  <li>Antioxidant.</li>
+                  <li>Immune function.</li>
+                  <li>Collagen synthesis.</li>
+                  <li>Enhances iron absorption.</li>
+                  <li>May reduce cold duration.</li>
                 </ul>
               </td>
               <td class="cons">
                 <ul>
-                    <li>High doses can cause digestive upset (diarrhea, nausea).</li>
-                    <li>Deficiency can lead to scurvy (a disease characterized by weakness, fatigue, and bleeding gums).</li>
-                    <li>May interfere with certain medical tests.</li>
-                  </ul>
+                  <li>High doses: digestive upset.</li>
+                  <li>Deficiency: scurvy.</li>
+                  <li>May interfere with tests.</li>
+                </ul>
+              </td>
+              <td class="context">
+                Found in citrus fruits, berries, tomatoes, peppers.  Easily destroyed by heat and light.
               </td>
             </tr>
             <tr>
               <td>Vitamin D (Calciferol)</td>
               <td class="pros">
                 <ul>
-                  <li>Essential for calcium absorption and bone health.</li>
-                  <li>Supports immune function.</li>
-                  <li>May play a role in preventing certain chronic diseases.</li>
-                  <li>Produced in the skin in response to sunlight.</li>
+                  <li>Calcium absorption, bone health.</li>
+                  <li>Immune function.</li>
+                  <li>Chronic disease prevention.</li>
+                  <li>Produced by sunlight.</li>
                 </ul>
               </td>
               <td class="cons">
                 <ul>
-                  <li>High doses can be toxic, leading to hypercalcemia (high levels of calcium in the blood).</li>
-                  <li>Symptoms of toxicity include nausea, vomiting, weakness, and kidney problems.</li>
-                  <li>Deficiency can lead to rickets (in children) and osteomalacia (in adults).</li>
+                  <li>High doses toxic: hypercalcemia.</li>
+                  <li>Toxicity: nausea, kidney problems.</li>
+                  <li>Deficiency: rickets, osteomalacia.</li>
                 </ul>
+              </td>
+              <td class="context">
+                Found in fatty fish, egg yolks, fortified foods.  Sunlight exposure is a major source.
               </td>
             </tr>
             <tr>
               <td>Vitamin E (Tocopherol)</td>
               <td class="pros">
                 <ul>
-                    <li>Potent antioxidant.</li>
-                    <li>Protects cells from damage.</li>
-                    <li>Supports immune function.</li>
-                    <li>May play a role in preventing heart disease and certain cancers.</li>
+                  <li>Antioxidant.</li>
+                  <li>Protects cells.</li>
+                  <li>Immune function.</li>
+                  <li>Heart disease/cancer prevention.</li>
                 </ul>
-                </td>
+              </td>
               <td class="cons">
                 <ul>
-                  <li>High doses may increase the risk of bleeding, especially in people taking blood thinners.</li>
-                  <li>Deficiency is rare but can cause nerve damage and muscle weakness.</li>
+                  <li>High doses: bleeding risk.</li>
+                  <li>Deficiency rare: nerve damage.</li>
                 </ul>
+              </td>
+              <td class="context">
+                Found in nuts, seeds, vegetable oils, leafy greens.  Alpha-tocopherol is the most active form.
               </td>
             </tr>
             <tr>
               <td>Vitamin K (Phylloquinone, Menaquinone)</td>
               <td class="pros">
                 <ul>
-                    <li>Essential for blood clotting.</li>
-                    <li>Plays a role in bone health.</li>
-                    <li>Synthesized by bacteria in the gut.</li>
+                  <li>Blood clotting.</li>
+                  <li>Bone health.</li>
+                  <li>Gut bacteria synthesis.</li>
                 </ul>
               </td>
               <td class="cons">
                 <ul>
-                    <li>Deficiency can lead to excessive bleeding.</li>
-                    <li>May interfere with blood-thinning medications.</li>
-                    <li>Newborns are often given a vitamin K injection to prevent bleeding problems.</li>
+                  <li>Deficiency: excessive bleeding.</li>
+                  <li>Interferes with blood thinners.</li>
+                  <li>Newborns get K injection.</li>
                 </ul>
+              </td>
+              <td class="context">
+                Found in leafy greens (K1), fermented foods, and animal products (K2).
               </td>
             </tr>
             <tr>
                 <td>Choline</td>
                 <td class="pros">
                   <ul>
-                    <li>Important for brain development and function.</li>
-                    <li>Plays a role in liver health.</li>
-                    <li>Essential for the production of acetylcholine, a neurotransmitter.</li>
+                    <li>Brain development/function.</li>
+                    <li>Liver health.</li>
+                    <li>Acetylcholine production.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses: fishy body odor.</li>
+                    <li>Deficiency: liver/muscle damage.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in eggs, meat, fish, soybeans.  Important during pregnancy for fetal development.
+                </td>
+            </tr>
+            <tr>
+                <td>Calcium</td>
+                <td class="pros">
+                  <ul>
+                    <li>Strong bones and teeth.</li>
+                    <li>Muscle function.</li>
+                    <li>Nerve transmission.</li>
+                    <li>Blood clotting.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses: kidney stones.</li>
+                    <li>May interfere with absorption of other minerals.</li>
+                    <li>Constipation.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in dairy products, leafy greens, fortified foods. Vitamin D is essential for calcium absorption.
+                </td>
+            </tr>
+            <tr>
+                <td>Iron</td>
+                <td class="pros">
+                  <ul>
+                    <li>Oxygen transport (hemoglobin).</li>
+                    <li>Energy production.</li>
+                    <li>Immune function.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses: toxic, organ damage.</li>
+                    <li>Deficiency: anemia.</li>
+                    <li>Constipation.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in red meat, poultry, fish, beans, fortified cereals. Heme iron (animal sources) is more easily absorbed than non-heme iron (plant sources). Vitamin C enhances non-heme iron absorption.
+                </td>
+            </tr>
+            <tr>
+                <td>Zinc</td>
+                <td class="pros">
+                  <ul>
+                    <li>Immune function.</li>
+                    <li>Wound healing.</li>
+                    <li>Cell growth and division.</li>
+                    <li>Taste and smell.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses: copper deficiency, nausea.</li>
+                    <li>Interferes with iron absorption.</li>
+                    <li>Impaired immune function.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in oysters, red meat, poultry, beans, nuts.
+                </td>
+            </tr>
+            <tr>
+                <td>Magnesium</td>
+                <td class="pros">
+                  <ul>
+                      <li>Muscle and nerve function.</li>
+                      <li>Blood sugar control.</li>
+                      <li>Blood pressure regulation.</li>
+                      <li>Bone health.</li>
+                      <li>Energy production.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses (from supplements): diarrhea, nausea.</li>
+                    <li>Kidney problems can lead to toxicity.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in leafy greens, nuts, seeds, whole grains, dark chocolate.
+                </td>
+            </tr>
+              <tr>
+                <td>Copper</td>
+                <td class="pros">
+                  <ul>
+                      <li>Iron metabolism.</li>
+                      <li>Connective tissue formation.</li>
+                      <li>Nerve function.</li>
+                      <li>Energy production.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                      <li>High doses: liver damage, nausea.</li>
+                      <li>Deficiency: anemia, neurological problems.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in shellfish, nuts, seeds, whole grains, chocolate.
+                </td>
+            </tr>
+          <tr>
+                <td>Iodine</td>
+                <td class="pros">
+                  <ul>
+                      <li>Thyroid hormone production.</li>
+                      <li>Metabolism regulation.</li>
+                      <li>Brain development.</li>
                   </ul>
                 </td>
                 <td class="cons">
                 <ul>
-                    <li>High doses can cause a fishy body odor, sweating, and low blood pressure.</li>
-                    <li>Deficiency can lead to liver damage and muscle damage.</li>
+
+                    <li>High doses: thyroid problems.</li>
+                    <li>Deficiency: goiter, hypothyroidism.</li>
+                </ul>
+                </td>
+                <td class="context">
+                    Found in iodized salt, seafood, seaweed, dairy products.
+                </td>
+          </tr>
+            <tr>
+                <td>Selenium</td>
+                <td class="pros">
+                    <ul>
+                        <li>Antioxidant.</li>
+                        <li>Thyroid function.</li>
+                        <li>Immune function.</li>
+                    </ul>
+                </td>
+                <td class="cons">
+                    <ul>
+                        <li>High doses: hair loss, nail changes, garlic breath.</li>
+                        <li>Deficiency: Keshan disease (heart problem), Kashin-Beck disease (joint problem)</li>
+                    </ul>
+                </td>
+                <td class="context">
+                    Found in Brazil nuts, seafood, meat, poultry, eggs.
+                </td>
+            </tr>
+            <tr>
+                <td>Manganese</td>
+                <td class="pros">
+                  <ul>
+                      <li>Bone formation.</li>
+                      <li>Wound healing.</li>
+                      <li>Metabolism of carbohydrates, cholesterol, and amino acids.</li>
                   </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                      <li>High doses (from industrial exposure): neurological problems.</li>
+                      <li>Deficiency: rare.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in whole grains, nuts, leafy vegetables, tea.
+                </td>
+            </tr>
+            <tr>
+                <td>Chromium</td>
+                <td class="pros">
+                  <ul>
+                      <li>May enhance insulin action.</li>
+                      <li>May play a role in blood sugar control.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                      <li>High doses (from supplements): may cause kidney or liver problems.</li>
+                      <li>Deficiency: impaired glucose tolerance (rare).</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in broccoli, whole grains, meat, brewer's yeast. The role of chromium in blood sugar control is still being researched.
+                </td>
+            </tr>
+            <tr>
+                <td>Molybdenum</td>
+                <td class="pros">
+                  <ul>
+                    <li>Enzyme cofactor (helps enzymes function).</li>
+                    <li>Important for processing sulfur-containing amino acids.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                    <ul>
+                        <li>High doses: gout-like symptoms (rare).</li>
+                        <li>Deficiency: extremely rare.</li>
+                    </ul>
+                </td>
+                <td class="context">
+                    Found in legumes, grains, nuts.
+                </td>
+              </tr>
+              <tr>
+                <td>Fluoride</td>
+                <td class="pros">
+                  <ul>
+                    <li>Strengthens tooth enamel.</li>
+                    <li>Prevents tooth decay.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses: dental fluorosis (mottling of teeth), skeletal fluorosis.</li>
+                  </ul>
+                </td>
+                <td class="context">
+                    Found in fluoridated water, toothpaste, tea.
                 </td>
             </tr>
         </tbody>
