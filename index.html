@@ -14,273 +14,293 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .vitamin-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
-        .vitamin {
+        th, td {
             border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
+            padding: 8px;
+            text-align: left;
         }
-        .vitamin h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .vitamin h3 {
-            margin-top: 15px;
-            margin-bottom: 5px;
-            color: #555;
-        }
-        .vitamin ul {
-            padding-left: 20px;
-            margin-top: 5px;
-        }
-        .vitamin li {
-            margin-bottom: 5px;
+        th {
+            background-color: #f2f2f2;
         }
         .pros {
-          color: green;
+            color: green;
         }
         .cons {
-          color: red;
+            color: red;
+        }
+        ul { /* Remove default list styling */
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        li::before { /* Add custom bullet points */
+          content: "• ";
         }
     </style>
 </head>
 <body>
     <h1>Vitamins: Pros and Cons</h1>
 
-    <div class="vitamin-container">
-        <div class="vitamin">
-            <h2>Vitamin A (Retinoids, Beta-Carotene)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Essential for vision, especially night vision.</li>
-                <li>Supports immune function.</li>
-                <li>Promotes cell growth and differentiation.</li>
-                <li>Important for bone growth and reproduction.</li>
-              <li>Antioxidant properties (especially beta-carotene).</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses of preformed Vitamin A (retinoids) can be toxic.</li>
-                <li>Can cause birth defects if taken in excess during pregnancy.</li>
-                <li>Symptoms of toxicity include nausea, headache, dizziness, and blurred vision.</li>
-                <li>Excess beta-carotene can cause carotenodermia (yellowing of the skin), which is generally harmless.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B1 (Thiamine)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Crucial for energy metabolism (converting carbohydrates into energy).</li>
-                <li>Supports nerve function.</li>
-                <li>Important for heart health.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>Deficiency can lead to beriberi (a disease affecting the nervous and cardiovascular systems).</li>
-                <li>Alcohol consumption can interfere with thiamine absorption.</li>
-                <li>Rarely, very high doses can cause upset stomach.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B2 (Riboflavin)</h2>
-            <h3>Pros</h3>
-           <ul class="pros">
-              <li>Important for energy production.</li>
-              <li>Supports cellular function, growth, and development.</li>
-              <li>Acts as an antioxidant.</li>
-              <li>Helps maintain healthy skin, eyes, and mucous membranes.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>Deficiency can cause skin problems, mouth sores, and anemia.</li>
-                <li>Excess riboflavin is usually excreted in urine, making toxicity rare.</li>
-                <li>May cause urine to turn bright yellow (harmless).</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B3 (Niacin, Nicotinamide, Nicotinic Acid)</h2>
-             <h3>Pros</h3>
-            <ul class="pros">
-                <li>Plays a vital role in energy metabolism.</li>
-                <li>Helps maintain healthy skin and nerves.</li>
-                <li>Can lower cholesterol levels (especially nicotinic acid).</li>
-                <li>Supports digestive function.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
+    <table>
+        <thead>
+            <tr>
+                <th>Vitamin</th>
+                <th>Pros</th>
+                <th>Cons</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vitamin A (Retinoids, Beta-Carotene)</td>
+                <td class="pros">
+                  <ul>
+                    <li>Essential for vision, especially night vision.</li>
+                    <li>Supports immune function.</li>
+                    <li>Promotes cell growth and differentiation.</li>
+                    <li>Important for bone growth and reproduction.</li>
+                  <li>Antioxidant properties (especially beta-carotene).</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>High doses of preformed Vitamin A (retinoids) can be toxic.</li>
+                    <li>Can cause birth defects if taken in excess during pregnancy.</li>
+                    <li>Symptoms of toxicity include nausea, headache, dizziness, and blurred vision.</li>
+                    <li>Excess beta-carotene can cause carotenodermia (yellowing of the skin), which is generally harmless.</li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Vitamin B1 (Thiamine)</td>
+                <td class="pros">
+                  <ul>
+                    <li>Crucial for energy metabolism (converting carbohydrates into energy).</li>
+                    <li>Supports nerve function.</li>
+                    <li>Important for heart health.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                <ul>
+                    <li>Deficiency can lead to beriberi (a disease affecting the nervous and cardiovascular systems).</li>
+                    <li>Alcohol consumption can interfere with thiamine absorption.</li>
+                    <li>Rarely, very high doses can cause upset stomach.</li>
+                </ul>
+                </td>
+            </tr>
+            <tr>
+              <td>Vitamin B2 (Riboflavin)</td>
+              <td class="pros">
+                <ul>
+                  <li>Important for energy production.</li>
+                  <li>Supports cellular function, growth, and development.</li>
+                  <li>Acts as an antioxidant.</li>
+                  <li>Helps maintain healthy skin, eyes, and mucous membranes.</li>
+                </ul>
+              </td>
+              <td class="cons">
+              <ul>
+                  <li>Deficiency can cause skin problems, mouth sores, and anemia.</li>
+                  <li>Excess riboflavin is usually excreted in urine, making toxicity rare.</li>
+                  <li>May cause urine to turn bright yellow (harmless).</li>
+              </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin B3 (Niacin, Nicotinamide, Nicotinic Acid)</td>
+              <td class="pros">
+                <ul>
+                  <li>Plays a vital role in energy metabolism.</li>
+                  <li>Helps maintain healthy skin and nerves.</li>
+                  <li>Can lower cholesterol levels (especially nicotinic acid).</li>
+                  <li>Supports digestive function.</li>
+                </ul>
+              </td>
+              <td class="cons">
+              <ul>
                 <li>High doses of nicotinic acid can cause flushing, itching, and liver damage.</li>
                 <li>Nicotinamide is less likely to cause flushing but may still cause nausea at high doses.</li>
                 <li>Deficiency can lead to pellagra (a disease characterized by skin problems, diarrhea, and dementia).</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B5 (Pantothenic Acid)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-              <li>Essential for energy metabolism.</li>
-              <li>Plays a role in the synthesis of hormones and cholesterol.</li>
-              <li>Supports wound healing.</li>
-              <li>Widely available in foods, making deficiency rare.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-              <li>Deficiency is extremely rare.</li>
-              <li>Very high doses may cause mild diarrhea or nausea.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B6 (Pyridoxine, Pyridoxal, Pyridoxamine)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-              <li>Important for brain development and function.</li>
-              <li>Plays a role in the production of neurotransmitters and red blood cells.</li>
-              <li>Helps regulate homocysteine levels (high levels are linked to heart disease).</li>
-              <li>Supports immune function.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses can cause nerve damage (neuropathy).</li>
-                <li>Deficiency can lead to anemia, skin problems, and depression.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B7 (Biotin)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Important for the metabolism of fats, carbohydrates, and protein.</li>
-                <li>Supports healthy hair, skin, and nails.</li>
-                <li>May help regulate blood sugar levels.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-              <li>Deficiency is rare but can cause hair loss, skin rashes, and neurological problems.</li>
-              <li>High doses are generally considered safe, but may interfere with some lab tests.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B9 (Folate, Folic Acid)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Crucial for cell growth and division, especially during pregnancy.</li>
-                <li>Helps prevent neural tube defects in developing babies.</li>
-                <li>Important for red blood cell formation.</li>
-                <li>May help reduce the risk of certain cancers.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses of folic acid can mask a vitamin B12 deficiency.</li>
-                <li>Deficiency can lead to anemia and other health problems.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin B12 (Cobalamin)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-              <li>Essential for nerve function and the formation of red blood cells.</li>
-              <li>Plays a role in DNA synthesis.</li>
-              <li>Important for brain health.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-              <li>Deficiency can lead to anemia, nerve damage, and cognitive problems.</li>
-              <li>Absorption can be impaired in older adults and people with certain digestive conditions.</li>
-              <li>Vegans and vegetarians are at higher risk of deficiency.</li>
-            </ul>
-        </div>
-        <div class="vitamin">
-            <h2>Vitamin C (Ascorbic Acid)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-              <li>Potent antioxidant.</li>
-              <li>Supports immune function.</li>
-              <li>Necessary for collagen synthesis (important for skin, bones, and connective tissues).</li>
-              <li>Enhances iron absorption.</li>
-              <li>May help reduce the duration and severity of colds.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses can cause digestive upset (diarrhea, nausea).</li>
-                <li>Deficiency can lead to scurvy (a disease characterized by weakness, fatigue, and bleeding gums).</li>
-                <li>May interfere with certain medical tests.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin D (Calciferol)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Essential for calcium absorption and bone health.</li>
-                <li>Supports immune function.</li>
-                <li>May play a role in preventing certain chronic diseases.</li>
-                <li>Produced in the skin in response to sunlight.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses can be toxic, leading to hypercalcemia (high levels of calcium in the blood).</li>
-                <li>Symptoms of toxicity include nausea, vomiting, weakness, and kidney problems.</li>
-                <li>Deficiency can lead to rickets (in children) and osteomalacia (in adults).</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin E (Tocopherol)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Potent antioxidant.</li>
-                <li>Protects cells from damage.</li>
-                <li>Supports immune function.</li>
-                <li>May play a role in preventing heart disease and certain cancers.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses may increase the risk of bleeding, especially in people taking blood thinners.</li>
-                <li>Deficiency is rare but can cause nerve damage and muscle weakness.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Vitamin K (Phylloquinone, Menaquinone)</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Essential for blood clotting.</li>
-                <li>Plays a role in bone health.</li>
-                <li>Synthesized by bacteria in the gut.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>Deficiency can lead to excessive bleeding.</li>
-                <li>May interfere with blood-thinning medications.</li>
-                <li>Newborns are often given a vitamin K injection to prevent bleeding problems.</li>
-            </ul>
-        </div>
-
-        <div class="vitamin">
-            <h2>Choline</h2>
-            <h3>Pros</h3>
-            <ul class="pros">
-                <li>Important for brain development and function.</li>
-                <li>Plays a role in liver health.</li>
-                <li>Essential for the production of acetylcholine, a neurotransmitter.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul class="cons">
-                <li>High doses can cause a fishy body odor, sweating, and low blood pressure.</li>
-                <li>Deficiency can lead to liver damage and muscle damage.</li>
-            </ul>
-        </div>
-    </div>
+              </ul>
+              </td>
+            </tr>
+            <tr>
+                <td>Vitamin B5 (Pantothenic Acid)</td>
+                <td class="pros">
+                  <ul>
+                    <li>Essential for energy metabolism.</li>
+                    <li>Plays a role in the synthesis of hormones and cholesterol.</li>
+                    <li>Supports wound healing.</li>
+                    <li>Widely available in foods, making deficiency rare.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                  <ul>
+                    <li>Deficiency is extremely rare.</li>
+                    <li>Very high doses may cause mild diarrhea or nausea.</li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Vitamin B6 (Pyridoxine, Pyridoxal, Pyridoxamine)</td>
+                <td class="pros">
+                <ul>
+                    <li>Important for brain development and function.</li>
+                    <li>Plays a role in the production of neurotransmitters and red blood cells.</li>
+                    <li>Helps regulate homocysteine levels (high levels are linked to heart disease).</li>
+                    <li>Supports immune function.</li>
+                </ul>
+                </td>
+                <td class="cons">
+                <ul>
+                    <li>High doses can cause nerve damage (neuropathy).</li>
+                    <li>Deficiency can lead to anemia, skin problems, and depression.</li>
+                </ul>
+                </td>
+            </tr>
+            <tr>
+              <td>Vitamin B7 (Biotin)</td>
+              <td class="pros">
+                <ul>
+                    <li>Important for the metabolism of fats, carbohydrates, and protein.</li>
+                    <li>Supports healthy hair, skin, and nails.</li>
+                    <li>May help regulate blood sugar levels.</li>
+                </ul>
+              </td>
+              <td class="cons">
+                <ul>
+                    <li>Deficiency is rare but can cause hair loss, skin rashes, and neurological problems.</li>
+                    <li>High doses are generally considered safe, but may interfere with some lab tests.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin B9 (Folate, Folic Acid)</td>
+              <td class="pros">
+                <ul>
+                    <li>Crucial for cell growth and division, especially during pregnancy.</li>
+                    <li>Helps prevent neural tube defects in developing babies.</li>
+                    <li>Important for red blood cell formation.</li>
+                    <li>May help reduce the risk of certain cancers.</li>
+                  </ul>
+              </td>
+              <td class="cons">
+                <ul>
+                    <li>High doses of folic acid can mask a vitamin B12 deficiency.</li>
+                    <li>Deficiency can lead to anemia and other health problems.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin B12 (Cobalamin)</td>
+              <td class="pros">
+                <ul>
+                    <li>Essential for nerve function and the formation of red blood cells.</li>
+                    <li>Plays a role in DNA synthesis.</li>
+                    <li>Important for brain health.</li>
+                </ul>
+              </td>
+              <td class="cons">
+                <ul>
+                    <li>Deficiency can lead to anemia, nerve damage, and cognitive problems.</li>
+                    <li>Absorption can be impaired in older adults and people with certain digestive conditions.</li>
+                    <li>Vegans and vegetarians are at higher risk of deficiency.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin C (Ascorbic Acid)</td>
+              <td class="pros">
+                <ul>
+                    <li>Potent antioxidant.</li>
+                    <li>Supports immune function.</li>
+                    <li>Necessary for collagen synthesis (important for skin, bones, and connective tissues).</li>
+                    <li>Enhances iron absorption.</li>
+                    <li>May help reduce the duration and severity of colds.</li>
+                </ul>
+              </td>
+              <td class="cons">
+                <ul>
+                    <li>High doses can cause digestive upset (diarrhea, nausea).</li>
+                    <li>Deficiency can lead to scurvy (a disease characterized by weakness, fatigue, and bleeding gums).</li>
+                    <li>May interfere with certain medical tests.</li>
+                  </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin D (Calciferol)</td>
+              <td class="pros">
+                <ul>
+                  <li>Essential for calcium absorption and bone health.</li>
+                  <li>Supports immune function.</li>
+                  <li>May play a role in preventing certain chronic diseases.</li>
+                  <li>Produced in the skin in response to sunlight.</li>
+                </ul>
+              </td>
+              <td class="cons">
+                <ul>
+                  <li>High doses can be toxic, leading to hypercalcemia (high levels of calcium in the blood).</li>
+                  <li>Symptoms of toxicity include nausea, vomiting, weakness, and kidney problems.</li>
+                  <li>Deficiency can lead to rickets (in children) and osteomalacia (in adults).</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin E (Tocopherol)</td>
+              <td class="pros">
+                <ul>
+                    <li>Potent antioxidant.</li>
+                    <li>Protects cells from damage.</li>
+                    <li>Supports immune function.</li>
+                    <li>May play a role in preventing heart disease and certain cancers.</li>
+                </ul>
+                </td>
+              <td class="cons">
+                <ul>
+                  <li>High doses may increase the risk of bleeding, especially in people taking blood thinners.</li>
+                  <li>Deficiency is rare but can cause nerve damage and muscle weakness.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Vitamin K (Phylloquinone, Menaquinone)</td>
+              <td class="pros">
+                <ul>
+                    <li>Essential for blood clotting.</li>
+                    <li>Plays a role in bone health.</li>
+                    <li>Synthesized by bacteria in the gut.</li>
+                </ul>
+              </td>
+              <td class="cons">
+                <ul>
+                    <li>Deficiency can lead to excessive bleeding.</li>
+                    <li>May interfere with blood-thinning medications.</li>
+                    <li>Newborns are often given a vitamin K injection to prevent bleeding problems.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+                <td>Choline</td>
+                <td class="pros">
+                  <ul>
+                    <li>Important for brain development and function.</li>
+                    <li>Plays a role in liver health.</li>
+                    <li>Essential for the production of acetylcholine, a neurotransmitter.</li>
+                  </ul>
+                </td>
+                <td class="cons">
+                <ul>
+                    <li>High doses can cause a fishy body odor, sweating, and low blood pressure.</li>
+                    <li>Deficiency can lead to liver damage and muscle damage.</li>
+                  </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
