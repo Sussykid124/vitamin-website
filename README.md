@@ -1,27 +1,28 @@
-# Vitamin Information Website (Table Format)
+# Micronutrient Information Website (Table Format with Context)
 
-This simple HTML website provides a list of vitamins, including their pros and cons, presented in a clear and organized table format.
+This simple HTML website provides information about various micronutrients, including vitamins and minerals. It presents the data in an organized table format, outlining the pros, cons, and important contextual information for each nutrient.
 
 ## Features
 
-*   Lists various vitamins in a table.
-*   Clearly outlines the benefits (pros) and potential drawbacks (cons) of each vitamin in separate columns.
-*   Uses a responsive design.
-*   Simple, clean design for optimal readability.
+*   Lists a wide range of micronutrients (vitamins and minerals).
+*   Clearly outlines the benefits (pros) and potential drawbacks (cons) of each nutrient.
+*   Includes a "Context" column to provide additional information about sources, absorption, and other relevant details.
+*   Uses a responsive design for optimal viewing on different screen sizes.
+*   Simple, clean design for easy readability.
 
 ## Setup
 
-1.  **No Installation Needed:** This is a pure HTML website.  There are no dependencies to install.
-2.  **Open in Browser:** Simply open the `index.html` file in any web browser (Chrome, Firefox, Safari, Edge, etc.).
+1.  **No Installation Needed:** This is a pure HTML website.
+2.  **Open in Browser:** Simply open the `index.html` file in any web browser.
 
 ## Usage
 
-Just open the `index.html` file, and the website will display the table.  Scroll through the table to read about the pros and cons of each vitamin.
+Open the `index.html` file, and the website will display the table. Scroll through the table to read about each micronutrient.
 
 ## Contributing
 
-This is a very basic project, but if you have suggestions for improvements feel free to fork the project and make changes.
+Feel free to fork and modify.
 
 ## License
 
-This project is open-source.  No specific license is attached.
+Open-source.
